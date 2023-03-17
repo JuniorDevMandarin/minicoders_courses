@@ -1304,7 +1304,7 @@ tr:hover {
     display: flex;
     max-width: 338.14px;
     max-height: 340.65px;
-    left: 50.86px;
+    left: 10.86px;
     top: -120px;
     margin-top: 190px;
     background-color: #F1ECE5;
@@ -1541,8 +1541,10 @@ hr {
 .activities {
 
 
-    margin-left: 84.86px;
-
+    margin-left: 114.86px;
+    position: absolute;
+    margin-top: 760px;
+    width: 100px;
 }
 
 #oval {
