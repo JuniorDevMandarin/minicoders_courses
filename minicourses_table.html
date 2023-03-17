@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Minicoders</title>
+    <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@1.5.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/base2.css">
+    <link rel="stylesheet" type="text/css" href="../static/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../static/js/global_scripts.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10904711824"></script>
+    <script> window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'AW-10904711824');
+    </script>
+    <script> gtag('event', 'conversion', {'send_to': 'AW-10904711824/--M0CNumv8wDEJDl4s8o'}); </script>
+
+    <!--Start of Tawk.to Script>
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/63764049daff0e1306d7eed8/1gi2um8gs';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    End of Tawk.to Script-->
+
+</head>
+
+<script>
+    <script>
+        function setCookie(value) {
+        document.cookie = "language=" + value;
+        location.reload();
+    }
+</script>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex logo-header" href="/">
+            <img class="minicoders-img-responsive" src="../static/img/minicoders-logo-horizontal.png"
+                 style="max-width:142px;max-height:54px">
+        </a>
+        <div id="logo_text">For Schools</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                onclick="setWrapper(this)">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mx-sm-5 active">
+                    <a class="nav-link" href="/parental">My School</a>
+                </li>
+                <li class="nav-item mx-sm-5">
+                    <a class="nav-link" href="mailto:info@minicoders.com">Schedule a call</a>
+                </li>
+            </ul>
+            <div class="my-2 my-lg-0 justify-content-center align-items-center header-right">
+
+                <button class="btn btn-light border mx-sm-5 mr-5" type="submit">
+                    <a href="/logout">Log out</a>
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="banner">
+    <div class="wrapper">
+        <div class="offset-md-4 col-md-8 col text-md-start text-center">
+            <img class="minicoders-img-responsive" src="../static/img/arrow-right-down.png"
+                 style="max-width:40px;max-height:40px"/>
+        </div>
+
+        <h1 class="title">Minicourses</h1>
+        <p>Lorem ipsum dolor sit amet....</p>
+        <div class="blocks_header_minicourses">
+            <img class="minicoders-img-responsive" src="../static/img/faqs-header-bg.png"
+                 style="max-width:180px;max-height:180px"/>
+        </div>
+    </div>
+    <hr>
+    <div class="wrappper">
+        <div class="banner-bottom_minicourses">
+            <ul class="navig">
+                <li class="Classrooms"><a href="">My Classrooms</a></li>
+                <li><a href="" style="color:#5221BA;">Minicourses</a></li>
+                <li><a href="">FAQ's</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<div class="container-fluid mt-2 mb-5">
+
+    <div class="products">
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row g-3" id="rowid">
+                    <div id="oval">
+                        <div class="text_oval">1A</div>
+                    </div>
+                    <h1 class="minicourses_h1">Discovering Magic School</h1>
+                    <h2 class="minicourses_h2">[ Metaverse introduction ] [ Sequencing - 1 ]</h2>
+
+                    <div class="col-md-4">
+                        <div class="card_content ">
+                            In this minicourse children will be introduced to a metaverse game experience in Roblox.
+                            They will get familiar with the 3D world, avatar navigation in the world of Magic School
+                            where they will enroll and proceed with their first assignments.
+                            <br>
+                            <br>
+                            In order to complete the first challenges they will have to resolve the sequencing of the
+                            first blocks of code available for them at this stage: Step forward and Turn.
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_content ">
+                            Moreover kids will be awarded their progress with magic powers they will be able to use in
+                            the Magic School experience.
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card_content ">
+                            Educational standards fulfilled:
+                        </div>
+                        <div class="csta">
+                            <h6>CTSA 1A-AP-08 — Algorithms and Programming</h6>
+                            <h6>CSTA 1A-AP-11 — Modularity</h6><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div class="dependencies" style="margin-top: 181px; margin-left: -349px; font-size: 18px;">
+                            Dependencies:
+                        </div>
+                        <div class="dep-text" style="margin-top: 223px; margin-left: -117px;">
+
+                            <h6>Suitable for all levels. Not required to do any <br>minicourse previously.</h6>
+                        </div>
+                    </div>
+                    <h1 class="activities">Activities</h1>
+
+                    <div class="col-md-4">
+                        <div class="card" id="card_2">
+                            <button class="btn_2 "><img src="../static/img/arrow-right-up.png" class="reckangle_arrow"
+                                                        alt="">
+                                <p class="link_1" style="color: black" id="link">Video tutorial</p></button>
+                            <div class="d_flex"><p class="card-text mb-1 mt-1">Welcome to Magic School</p>
+
+                                <div class="box">
+                                    <div class="box_text">1</div>
+                                </div>
+                            </div>
+                            <img src="../static/img/Place_min.png" class="card-img-top">
+                            <div class="control play">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </div>
+
+                            <div class="card-body">
+
+
+                            </div>
+
+                            <div class="card-body">
+                                <div class="text-right buttons">
+                                    <button class="btn_4 btn-outline-dark">WATCH</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <button class="btn_2 "><img src="../static/img/arrow-right-up.png" class="reckangle_arrow"
+                                                        alt="">
+                                <p class="link_1" style="color: black" id="link">Video tutorial</p></button>
+                            <div class="d_flex"><p class="card-text mb-1 mt-1">What is a program?</p>
+
+                                <div class="box">
+                                    <div class="box_text">2</div>
+                                </div>
+                            </div>
+                            <img src="../static/img/Place_min.png" class="card-img-top">
+                            <div class="control play">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </div>
+                            <div class="card-body">
+
+
+                            </div>
+
+                            <div class="card-body">
+                                <div class="text-right buttons">
+                                    <button class="btn_4 btn-outline-dark">WATCH</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <button class="btn_2 "><img src="../static/img/arrow-right-up.png" class="reckangle_arrow"
+                                                        alt="">
+                                <p class="link_1" style="color: black" id="link">Video tutorial</p></button>
+                            <div class="d_flex">
+                                <p class="card-text mb-1 mt-1">Solve the challenges with magical
+                                    <spells></spells>
+                                </p>
+
+                                <div class="box">
+                                    <div class="box_text">3</div>
+                                </div>
+                            </div>
+                            <img src="../static/img/Place_min.png" class="card-img-top">
+                            <div class="control play">
+                                <span class="left"></span>
+                                <span class="right"></span>
+                            </div>
+                            <div class="card-body">
+
+
+                            </div>
+
+                            <div class="card-body">
+                                <div class="text-right buttons">
+                                    <button class="btn_4 btn-outline-dark">WATCH</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <button class="btn_2 ">
+                                <img src="../static/img/arrow-right-up.png" class="reckangle_arrow" alt="">
+                                <p class="link_1" style="color: black" id="link">Minecraft Experience</p></button>
+                            <div class="d_flex_2"><p class="card-tex">MAGIC SCHOOL<br><br></p>
+
+                                <div class="box_3">
+                                    <div class="box_text">4</div>
+                                </div>
+                            </div>
+                            <img src="../static/img/mars_img.png" class="card-img-top">
+
+
+                            <div class="card-body">
+                                <div class="text-right buttons">
+                                    <button class="btn_3 btn-outline-dark">PLAY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+
+                        <div id="oval_2">
+                            <div class="text_oval_2"><a href="/logout">Download Minicourse Plan</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="main_footer">
+    <div class="row  content-footer">
+        <div class="col-md-5 col-12 footer-logo">
+            <div>
+                <img class="minicoders-img-responsive" src="../static/img/minicoders-logo-footer.png"
+                     style="max-width:65px;max-height:65px">
+                <p class="text-white">
+                    Minicoders in an educational platform for kids, including Apps with video tutorials, virtual
+                    assistance and private Roblox game experiences where kids learn coding skills while playing.
+                </p>
+                <a href="https://www.kidsafeseal.com/certifiedproducts/minicoders.html" target="_blank">
+                    <img border="0" width="220"
+                         alt="Minicoders Kids (web and mobile) is listed by the kidSAFE Seal Program."
+                         src="https://www.kidsafeseal.com/sealimage/1500213334672566198/minicoders_extralarge_whitetm.png">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6">
+            <ul class="footer_list">
+                <li class="text-white margin-b-20px"><strong>Features</strong></li>
+                <li><a href="/parental">Parents</a></li>
+                <li><a href="/plans">Pricing</a></li>
+                <li><a href="/register">Start now</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6">
+            <ul class="footer_list">
+                <li class="text-white margin-b-20px"><strong>Resources</strong></li>
+                <li><a href="/faqs">FAQs</a></li>
+                <!-- <li><a href="#">Refer a friend</a></li>
+                <li><a href="#">Give a gift</a></li>
+                <li><a href="#">Reedem a gift</a></li> -->
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-6">
+            <ul class="footer_list">
+                <li><a href="https://onelink.to/cq5dr4"><img class="max-h-70 max-w-187" width="100%"
+                                                             src="/static/img/minicoders-app-google.png"/></a></li>
+                <li><a href="https://onelink.to/cq5dr4"><img class="max-h-70 max-w-187" width="100%"
+                                                             src="/static/img/minicoders-app-ios.png"/></a></li>
+                <li><a href="https://www.roblox.com/groups/12929013/minicoders21#!/about"><img
+                        class="footer-img-logo-centred max-h-70 max-w-187" style="margin-top: 30%;"
+                        src="/static/img/minicoders-roblox.png"/></a></li>
+                <!-- <li class="text-white margin-b-20px"><strong>Company</strong></li> -->
+                <!-- <li>About us</li>
+                <li>We are hiring!  </li>
+                <li>Blog</li>
+                <li>Press</li>
+                <li><a href="mailto:info@minicoders.com">Contact us</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div id="icons_styles">
+        <a href="https://www.facebook.com/minicoders21" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/minicoders.21/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/company/minicoders" target="_blank" class="fa fa-linkedin"></a>
+    </div>
+    <div id="separator-line"></div>
+    <div class="d-flex_mini flex-row justify-content-between ">
+        <div class="col-md-5 d-flex flex-row flex-wrap text-white" id="footer_copyright">
+            <i class="fa fa-copyright" aria-hidden="true"></i>
+            <p>minicoders21 S.L. All rights reserved</p>
+        </div>
+        <div class="col-md-5 text-white">
+            <a href="/privacy" style="margin-right: 8%;">Privacy</a>
+            <a href="/terms">Terms</a>
+        </div>
+        <div class="col-md-2 text-white">
+            <a class="list-item button" style="list-style: none; cursor:pointer;" data-bs-toggle="collapse"
+               href="#collapseLanguages" role="button" aria-expanded="false" aria-controls="collapseLanguages">
+                <i class="fa fa-globe" aria-hidden="true"></i> Change language
+            </a>
+            <div class="collapse" id="collapseLanguages">
+                <ul class="text-white">
+                    <li class="list-item button" style="list-style: none; cursor:pointer;" onclick="setCookie('en')"><i
+                            class="fa fa-globe" aria-hidden="true"></i> English
+                    </li>
+                    <li class="list-item button" style="list-style: none; cursor: pointer;" onclick="setCookie('es')"><i
+                            class="fa fa-globe" aria-hidden="true"></i> Español
+                    </li>
+                    <li class="list-item button" style="list-style: none; cursor: pointer;" onclick="setCookie('pt')"><i
+                            class="fa fa-globe" aria-hidden="true"></i> Portuguese
+                    </li>
+                    <li class="list-item button" style="list-style: none; cursor: pointer;" onclick="setCookie('it')"><i
+                            class="fa fa-globe" aria-hidden="true"></i> Italiano
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<script>
+    $('.control').on('click', function () {
+        $(this).toggleClass('pause play');
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        var table = $('.beauty_table'),
+            cell = $('.td-info');
+
+        function mouseMove() {
+            $(cell).mouseover(function () {
+                $(this).addClass('hover-td')
+            })
+            $(cell).mouseout(function () {
+                $(this).removeClass('hover-td')
+            })
+        }
+
+        mouseMove();
+    });
+</script>
+
+
+<script>
+    function setWrapper(navbarExpanded) {
+        expanded = navbarExpanded.getAttribute('aria-expanded');
+        if (expanded == "true") {
+            if (document.getElementById('mainWrapper')) {
+                document.getElementById('mainWrapper').setAttribute("style", "margin-top:0px");
+
+            }
+        } else {
+            if (document.getElementById('mainWrapper')) {
+                document.getElementById('mainWrapper').setAttribute("style", "margin-top:-74px");
+            }
+        }
+    }
+</script>
+
+<script>
+    document.body.addEventListener('htmx:configRequest', (event) => {
+        event.detail.headers['X-CSRFToken'] = 'DGcOXxaXCeDVmk1PX5lt68tbbFV53Oh9Bh5P4ft4aDVC1b46SpGuC5yVmLUCClPn';
+    })
+</script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+    import {getAnalytics} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyC9itB2out6-d5pdVfy38b-G9qnwXZ4Gls",
+        authDomain: "minicoders-cbef5.firebaseapp.com",
+        projectId: "minicoders-cbef5",
+        storageBucket: "minicoders-cbef5.appspot.com",
+        messagingSenderId: "178970252379",
+        appId: "1:178970252379:web:caa50c6b46b1c71ebe9b7e",
+        measurementId: "G-R32YNPP935"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+
+
+<script type="text/javascript"> _linkedin_partner_id = "4124946";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script>
+<script type="text/javascript"> (function (l) {
+    if (!l) {
+        window.lintrk = function (a, b) {
+            window.lintrk.q.push([a, b])
+        };
+        window.lintrk.q = []
+    }
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";
+    b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);
+})(window.lintrk); </script>
+<noscript><img height="1" width="1" style="display:none;" alt=""
+               src="https://px.ads.linkedin.com/collect/?pid=4124946&fmt=gif"/></noscript>
+
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js%27);
+    fbq('init', '455327475996393');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=455327475996393&ev=PageView&noscript=1"
+/></noscript>
+
+<!--Master Tag add just before the closing </body> tag-->
+<script src="https://www.dwin1.com/31728.js" type="text/javascript" defer="defer"></script>
+<script src="https://www.dwin1.com/33007.js" type="text/javascript" defer="defer"></script>
+<script src="https://www.dwin1.com/35163.js" type="text/javascript" defer="defer"></script>
+
+
+</body>
+
+</html>
