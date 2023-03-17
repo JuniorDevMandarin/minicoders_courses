@@ -1226,7 +1226,7 @@ tr:hover {
     background-color: #F1ECE5;
     height: 2025.51px;
 
-    left: 63px;
+    left: 45px;
     box-shadow: 5px 5px 5px #c0baba;
     top: 65px;
     padding: 40px;
@@ -1523,7 +1523,8 @@ hr {
     justify-content: center;
     font-family: 'Space Grotesk';
     font-weight: 400;
-    margin-top: -91px;
+    margin-top: -72px;
+    font-size: 48px;
 
 }
 
@@ -1531,9 +1532,10 @@ hr {
     display: flex;
     justify-content: center;
     color: #8A9393;
-    font-family: 'Space Grotesk';
+    font-size: 28px;
+    font-family: 'Space Grotesk', sans-serif;
     text-align: center;
-    margin: -64px 0px 0px 0px;
+    margin: 50px 0px 50px 0px;
 }
 
 .activities {
@@ -1546,13 +1548,14 @@ hr {
 #oval {
     display: flex;
     /* position: absolute; */
-    width: 58px;
+    width: 64px;
     height: 43px;
     background: #00875A;
     margin-left: 71px;
     -webkit-border-radius: 100px / 50px;
     -moz-border-radius: 100px / 50px;
     border-radius: 100px / 83px;
+
 }
 
 #oval2 {
@@ -1575,7 +1578,7 @@ hr {
 
 .text_oval {
     color: white;
-    margin-left: 12px;
+    margin-left: 15px;
     margin-top: 10px;
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -1611,6 +1614,7 @@ hr {
     margin-top: 20px;
     font-weight: 600;
     font-size: 16px;
+    text-align: center;
 }
 
 .reckangle_arrow {
@@ -1625,6 +1629,10 @@ hr {
     margin-top: 15px;
     margin-left: 126px;
     font-weight: 500;
+}
+.dependencies{
+    margin-top: -198px;
+    margin-left: -22px;
 }
 
 .btn_tutorial_1 {
