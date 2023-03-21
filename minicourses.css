@@ -1173,15 +1173,15 @@ tr:hover {
 }
 
 
-.container {
+.container-fluid {
 
-    margin-right: 50px;
-    margin-left: 90px;
     display: flex;
     justify-content: center;
+    max-width: 1140px;
     align-items: center;
 
 }
+
 
 #classroom_text {
     font-weight: 400;
@@ -1217,16 +1217,23 @@ tr:hover {
 
 }
 
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -433px;
+}
+
 #rowid {
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
     width: auto;
-    margin: 0 92px 85px 0;
+    margin: 0 -81px 85px 0;
     background-color: #F1ECE5;
-    height: 2025.51px;
+    height: 1640px;
 
-    left: 45px;
+    left: -26px;
     box-shadow: 5px 5px 5px #c0baba;
     top: 65px;
     padding: 40px;
@@ -1317,9 +1324,19 @@ tr:hover {
     padding: 25px;
     font-size: 18px;
     text-align: left;
-    margin: 1px 52px 0px 52px;
+    margin: -129px -32px -95px 5px;
     font-weight: 400;
     line-height: 24px;
+}
+
+.activity_text {
+    font-size: 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 44px;
+    margin-left: -5px;
 }
 
 .col-md-4 {
@@ -1436,6 +1453,7 @@ hr {
     background-color: white;
 
 }
+
 .btn_1 {
     margin-top: 4px;
     display: flex;
@@ -1448,9 +1466,10 @@ hr {
     background-color: white;
 
 }
-@media (max-width: 1438px){
-    .btn_1{
-        margin-left: 218px;
+
+@media (max-width: 1438px) {
+    .btn_1 {
+        margin-left: 224px;
     }
 }
 
@@ -1461,7 +1480,7 @@ hr {
     border: none;
     width: 149.36px;
     height: 41.72px;
-    margin-left: 188px;
+    margin-left: 189px;
     text-align: center;
     background-color: white;
 
@@ -1559,7 +1578,7 @@ hr {
     justify-content: center;
     font-family: 'Space Grotesk';
     font-weight: 400;
-    margin-top: -72px;
+    margin-top: -292px;
     font-size: 48px;
 
 }
@@ -1571,7 +1590,7 @@ hr {
     font-size: 28px;
     font-family: 'Space Grotesk', sans-serif;
     text-align: center;
-    margin: 0px 0px 50px 0px;
+    margin-top: -427px;
 }
 
 .activities {
@@ -1589,7 +1608,7 @@ hr {
     width: 64px;
     height: 43px;
     background: #00875A;
-    margin-left: 71px;
+    margin-left: 35px;
     -webkit-border-radius: 100px / 50px;
     -moz-border-radius: 100px / 50px;
     border-radius: 100px / 83px;
@@ -1630,7 +1649,7 @@ hr {
     height: 64px;
     background: #C6B3FD;
     margin-left: 27px;
-    margin-top: 360px;
+    margin-top: 618px;
     -webkit-border-radius: 100px / 50px;
     -moz-border-radius: 100px / 50px;
     border-radius: 21px / 19px;
