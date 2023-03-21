@@ -1392,7 +1392,7 @@ hr {
 }
 
 .buttons button {
-
+    z-index: 1;
     text-transform: uppercase;
     font-size: 12px;
     border-radius: 2px;
