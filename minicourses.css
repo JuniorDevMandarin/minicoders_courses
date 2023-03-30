@@ -1736,7 +1736,7 @@ hr {
     margin-left: -221px;
 }
 
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
     .minicourses_h1 {
         font-size: 30px;
         margin-top: -70px;
@@ -1868,7 +1868,7 @@ hr {
         margin-left: -50px;
     }
 }
-
+*/
 #faq_banner {
     top: -168px;
 }
