@@ -1232,7 +1232,7 @@ tr:hover {
     width: auto;
     margin: 0 -81px 85px 0;
     background-color: #F1ECE5;
-    height: 1640px;
+    height: 1400px;
 
     left: -26px;
     box-shadow: 5px 5px 5px #c0baba;
@@ -1344,6 +1344,7 @@ tr:hover {
     display: flex;
     justify-content: center;
     position: relative;
+    top: 81px;
 
 }
 
@@ -1439,7 +1440,6 @@ hr {
     height: 33.72px;
     font-weight: 700;
     font-size: 14px;
-    top: 275px;
 }
 
 .btn_2 {
@@ -1579,7 +1579,7 @@ hr {
     justify-content: center;
     font-family: 'Space Grotesk';
     font-weight: 400;
-    margin-top: -292px;
+    margin-top: -249px;
     font-size: 48px;
 
 }
@@ -1591,8 +1591,10 @@ hr {
     font-size: 28px;
     font-family: 'Space Grotesk', sans-serif;
     text-align: center;
-    margin-top: -427px;
+    margin-top: -359px;
 }
+
+
 
 .activities {
 
@@ -1682,7 +1684,7 @@ hr {
     height: 64px;
     background: #C6B3FD;
     margin-left: 27px;
-    margin-top: 618px;
+    margin-top: 510px;
     -webkit-border-radius: 100px / 50px;
     -moz-border-radius: 100px / 50px;
     border-radius: 21px / 19px;
