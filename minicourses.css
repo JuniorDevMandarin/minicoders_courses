@@ -1595,7 +1595,6 @@ hr {
 }
 
 
-
 .activities {
 
 
@@ -1617,6 +1616,7 @@ hr {
     border-radius: 100px / 83px;
 
 }
+
 #oval3 {
     display: flex;
     position: absolute;
@@ -1667,13 +1667,13 @@ hr {
     margin-top: 10px;
     font-family: 'Space Grotesk', sans-serif;
 }
+
 .text_oval4 {
     color: white;
     margin-left: 20px;
     margin-top: 10px;
     font-family: 'Space Grotesk', sans-serif;
 }
-
 
 
 #oval_2 {
@@ -1683,8 +1683,9 @@ hr {
     width: 280px;
     height: 64px;
     background: #C6B3FD;
-    margin-left: 27px;
-    margin-top: 510px;
+    margin-left: 821px;
+    margin-top: 1244px;
+
     -webkit-border-radius: 100px / 50px;
     -moz-border-radius: 100px / 50px;
     border-radius: 21px / 19px;
