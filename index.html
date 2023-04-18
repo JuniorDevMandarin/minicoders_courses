@@ -137,10 +137,10 @@
         <div class="img-black">
             <img id="black_a" src="static/img/black_arrow.png" onclick="myFunction()" class="droparrow">
         </div>
-        <div  class="dropbtn">Filter by grade: 1A (5 to 6 years)</div>
+        <div id="gradetext" class="dropbtn">Filter by grade:</div>
 
         <div id="myDropdown" class="dropdown-content">
-            <a href="#link_1c" style="color: #008777;">1A (5 to 6 years)</a>
+            <a href="#link_1c" onclick="changetext1()" style="color: #008777;">1A (5 to 6 years)</a>
             <hr class="hr_drop">
             <a href="#link_2c" style="color: #4667F4;">1B (7 to 9 years)</a>
             <hr class="hr_drop">
@@ -810,9 +810,15 @@
 
 </footer>
 
+
+
 <script>
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
+    function changetext1(){
+        var gradetext = document.getElementById("gradetext");
+        gradetext.innerText = "Filter by grade: 1A (5 to 6 years)"
+    }
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
