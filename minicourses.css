@@ -1974,7 +1974,7 @@ hr {
     font-size: 16px;
     border: none;
     left: -25px;
-    width: 258px;
+    min-width: 265px;
     display: flex;
     position: absolute;
     background-color: #FAF7F5;;
