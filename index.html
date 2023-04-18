@@ -133,18 +133,32 @@
 
 <div class="container mt-2 ">
     <!--DropDown Menu Courses-->
-    <div class="dropdown">
-        <div class="img-black">
-            <img id="black_a" src="static/img/black_arrow.png" onclick="myFunction()" class="droparrow">
-        </div>
-        <div id="gradetext" class="dropbtn">Filter by grade:</div>
+    <!--    <div class="dropdown">-->
 
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#link_1c" onclick="changetext1()" style="color: #008777;">1A (5 to 6 years)</a>
+    <!--        <div id="gradetext" class="dropbtn" >Filter by grade:-->
+    <!--            <div class="img-black" >-->
+    <!--                <img id="black_a" src="static/img/black_arrow.png"  onclick="myFunction()" class="droparrow">-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--        <div id="myDropdown" class="dropdown-content">-->
+    <!--            <a href="#link_1c" onclick="changetext1()" style="color: #008777;">1A (5 to 6 years)</a>-->
+    <!--            <hr class="hr_drop">-->
+    <!--            <a href="#link_2c" style="color: #4667F4;">1B (7 to 9 years)</a>-->
+    <!--            <hr class="hr_drop">-->
+    <!--            <a href="#link_3c" style="color: #F68D0E;">2 (10 to 12)</a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+    <div class="dropdown">
+        <span class="bottom"></span>
+        <input class="text-box" type="text" placeholder="Filter by grade:" readonly>
+        <div class="options">
+            <div onclick="show('1A (5 to 6 years)')" style="color: #008777;">1A (5 to 6 years)</div>
             <hr class="hr_drop">
-            <a href="#link_2c" style="color: #4667F4;">1B (7 to 9 years)</a>
+            <div onclick="show('1B (7 to 9 years)')" style="color: #4667F4;">1B (7 to 9 years)</div>
             <hr class="hr_drop">
-            <a href="#link_3c" style="color: #F68D0E;">2 (10 to 12)</a>
+            <div onclick="show('2 (10 to 12)') "style="color: #F68D0E;">1B (7 to 9 years)</div>
         </div>
     </div>
     <!--DropDown Menu Courses-->
@@ -809,18 +823,32 @@
     </div>
 
 </footer>
+<script>
+    function show(value) {
+        document.querySelector(".text-box").value = value;
+    }
 
-
+    let dropdown = document.querySelector(".dropdown")
+    dropdown.onclick = function () {
+        dropdown.classList.toggle("active")
+    }
+</script>
 
 <script>
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
-    function changetext1(){
+    function changetext1() {
         var gradetext = document.getElementById("gradetext");
-        gradetext.innerText = "Filter by grade: 1A (5 to 6 years)"
+        gradetext.innerHTML = "Filter by grade: 1A (5 to 6 years)" +
+            <img id="black_a" src="static/img/black_arrow.png" onClick="myFunction()" className="droparrow"></img>
     }
+
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function funcar() {
+        document.getElementById("black_a").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it
@@ -837,6 +865,7 @@
             }
         }
     }
+
 </script>
 <script>
     $('.control').on('click', function () {
