@@ -132,11 +132,27 @@
 
 
 <div class="container mt-2 ">
+    <!--DropDown Menu Courses-->
+    <div class="dropdown">
+        <div class="img-black">
+            <img id="black_a" src="/static/img/black_arrow.png" onclick="myFunction()" class="droparrow">
+        </div>
+        <div  class="dropbtn">Filter by grade: 1A (5 to 6 years)</div>
 
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#link_1c" style="color: #008777;">1A (5 to 6 years)</a>
+            <hr class="hr_drop">
+            <a href="#link_2c" style="color: #4667F4;">1B (7 to 9 years)</a>
+            <hr class="hr_drop">
+            <a href="#link_3c" style="color: #F68D0E;">2 (10 to 12)</a>
+        </div>
+    </div>
+    <!--DropDown Menu Courses-->
     <div class="products">
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="row g-3" id="rowid">
+
                     <div class="containeer">
                         <div class="row grades">
                             <div class="col">
@@ -427,6 +443,7 @@
                                 </div>
                             </div>
                         </div>
+
 
                     </div>
                     <div class="col-md-4" style="    margin-left: -6px;">
@@ -793,7 +810,28 @@
 
 </footer>
 
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
 
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.droparrow')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 <script>
     $('.control').on('click', function () {
         $(this).toggleClass('pause play');
