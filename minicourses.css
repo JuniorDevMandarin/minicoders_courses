@@ -383,10 +383,6 @@ body {
     background-image: url('/static/img/bg-testimonials.png');
 }
 
-.wrapper {
-    position: relative;
-    overflow-x: hidden;
-}
 
 /* PARENTAL */
 .bg-parental-main {
@@ -584,6 +580,33 @@ a, a:hover, a:focus, a:active {
     color: silver;
     justify-content: space-between;
 
+}
+.name_area{
+    margin-top: 20px;
+    color:#21222D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle_p{
+    position: absolute;
+
+    width: 426px;
+    margin-top: 49px;
+    color: #363D3F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .faqs-search-button {
@@ -982,10 +1005,16 @@ a, a:hover, a:focus, a:active {
 }
 
 .title {
-    font-size: 48px;
-    font-weight: 400;
-    display: flex;
+
     justify-content: center;
+    color: #21222D;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -1.44px;
 }
 
 .banner p {
@@ -1002,7 +1031,7 @@ a, a:hover, a:focus, a:active {
     background-repeat: no-repeat;
     background-position: center center;
     width: auto;
-    height: 480.82px;
+    height: 339.82px;
     background-size: cover;
     padding-top: 60px;
     padding-bottom: 100px;
@@ -1010,7 +1039,7 @@ a, a:hover, a:focus, a:active {
 
 .banner hr {
     position: relative;
-    top: -5px;
+    top: 153px;
 }
 
 .hr_classroom {
@@ -1023,7 +1052,14 @@ a, a:hover, a:focus, a:active {
     top: 130px;
 }
 
-
+.banner-bottom_minicourses{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 28px 0;
+    margin-left: 40px;
+    margin-top: 140px;
+}
 .banner-bottom {
     padding: 15px 0;
     position: relative;
@@ -1229,13 +1265,13 @@ tr:hover {
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
-    width: auto;
+    width: 1170.777px;
     margin: 0 -81px 85px 0;
-    background-color: #F1ECE5;
-    height: 1400px;
+    background-color: #EAE0FF;
+    height: 675px;
 
-    left: -26px;
-    box-shadow: 5px 5px 5px #c0baba;
+    left: -58px;
+    box-shadow: 9px 4px 0px #C6B3FD;
     top: 65px;
     padding: 40px;
 }
@@ -1301,7 +1337,7 @@ tr:hover {
 .banner-bottom_minicourses {
     font-size: 18px;
     padding: 28px 0;
-    position: relative;
+
     bottom: 1px;
     top: -18px;
     left: 30px;
@@ -1315,7 +1351,7 @@ tr:hover {
     left: 10.86px;
     top: -191px;
     margin-top: 190px;
-    background-color: #F1ECE5;
+    background-color: #EAE0FF;
     border: none;
 }
 
@@ -1349,7 +1385,8 @@ tr:hover {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 304px;
+    top: 640px;
+    height: 210px;
 
 }
 
@@ -1377,6 +1414,7 @@ tr:hover {
     font-weight: 500;
     flex: 1 1 auto;
     padding: 0px;
+    background-color: #EAE0FF;
 }
 
 .card-text {
@@ -1394,7 +1432,7 @@ tr:hover {
 
 hr {
     margin: 0.2rem 0;
-    color: #bfbebe;
+    color: #8A9393;
 }
 
 .buttons button {
@@ -1467,7 +1505,7 @@ hr {
     border: none;
     width: 113.36000000000001px;
     height: 41.72px;
-    margin-left: 224px;
+    margin-left: 216px;
     text-align: center;
     background-color: white;
 
@@ -1486,7 +1524,7 @@ hr {
     border: none;
     width: 149.36px;
     height: 41.72px;
-    margin-left: 189px;
+    margin-left: 188px;
     text-align: center;
     background-color: white;
 
@@ -1514,6 +1552,10 @@ hr {
     background-color: #6AD2A0;
     min-height: 50px;
     margin-top: -10px;
+}
+
+.text_cardtext {
+    padding: 0px 0px 10px 0px;
 }
 
 .box_2 {
@@ -1583,10 +1625,18 @@ hr {
     position: absolute;
     display: flex;
     justify-content: center;
-    font-family: 'Space Grotesk';
-    font-weight: 400;
-    margin-top: 6px;
+    width: 576px;
+    height: 55.643px;
+    flex-shrink: 0;
+    margin-left: 274px;
+    color: #363D3F;
+    text-align: center;
+    font-family: Space Grotesk;
     font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -1.44px;
 
 
 }
@@ -1738,7 +1788,7 @@ hr {
 
 .card-tex {
     margin-top: 15px;
-    margin-left: 113px;
+    margin-left: 134px;
     font-weight: 500;
     font-size: 13px;
 }
@@ -2146,3 +2196,157 @@ hr {
     margin-top: 19px;
 }
 
+.main_footer {
+  background-color: rgb(33, 34, 44);
+  height: 100px;
+  margin-top: -100px;
+  padding-right: 60px;
+  padding-left: 60px;
+
+  width: auto;
+}
+
+
+.followus a {
+  margin-right: 20px;
+  margin-top: 0px;
+  color: aliceblue;
+  text-decoration: none;
+
+}
+
+.footer_list {
+  list-style-type: none;
+}
+
+.footer_list li {
+  color: rgb(122, 133, 146);
+  margin-top: 8px;
+}
+
+.content-footer {
+  justify-content: space-around;
+}
+
+.main_footer i {
+  padding-top: 5px;
+}
+
+#footer_copyright a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#footer_copyright p {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.footer-logo {
+  padding-right: 20%;
+}
+.text-white {
+  color: aliceblue;
+}
+.margin-b-20px {
+  margin-bottom: 20px;
+}
+#separator-line {
+  border-bottom: 1px solid rgb(89, 96, 104);
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+.footer-img-logo-centred {
+  width: 100%;
+  height: auto;
+}
+.d-flex{
+  font-family: "Inter";
+}
+
+.col-md-7 a {
+  color: white;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.change-lang{
+  position: absolute;
+  display: flex;
+  margin-left: 1044px;
+  margin-top: 4px;
+  width: 100px;
+  background: #21222D  ;
+  color: white;
+  border: none;
+}
+
+option{
+  text-align: center;
+  color: white;
+}
+
+.globe {
+  color: black;
+  position: absolute;
+  display: flex;
+  margin-top: 47px;
+  margin-left: 160px;
+}
+/* dropdown */
+
+
+/* Dropdown Button */
+.dropbtn {
+  background: none;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  height: 10px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  margin-top: 29px;
+  margin-left: 266px;
+  color: black;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 13px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
